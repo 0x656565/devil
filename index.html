@@ -2,6 +2,71 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4682b4;
+        }
+
+        label, select, input, button, p {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select, input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5a9bd3;
+        }
+
+        p#result {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2e8b57;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #4682b4;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>選擇難度和鑰匙數量</title>
@@ -59,8 +124,80 @@
     <br><br>
     <button onclick="calculateQuantities()">計算數量</button>
     <p id="result"></p>
-    <h2>說明</h2>
+    <h2 style="text-align: center;">說明</h2>
+
     <p>1.以上數據為假設20秒一場(含頭尾動畫)，僅供參考，可依自己刷關速度調整</p>
     <p>2.古代7以上無條件刷古代</p>
+    <p>3.以下為實測數據：</p>
+    <table border="1" style="text-align: center;" align="center">
+  <tr>
+    <th>一把鑰匙經驗</th>
+    <th>每把鑰匙可獲得經驗</th>
+    <th>一場經驗</th>
+  </tr>
+  <tr>
+    <td>古代10*</td>
+    <td>0.3969</td>
+    <td>1.5876</td>
+  </tr>
+  <tr>
+    <td>古代9*</td>
+    <td>0.3804</td>
+    <td>1.5216</td>
+  </tr>
+  <tr>
+    <td>古代8*</td>
+    <td>0.3639</td>
+    <td>1.4556</td>
+  </tr>
+  <tr>
+    <td>古代7*</td>
+    <td>0.3474</td>
+    <td>1.3896</td>
+  </tr>
+  <tr>
+    <td>簡單10</td>
+    <td>0.34</td>
+    <td>0.34</td>
+  </tr>
+  <tr>
+    <td>古代6*</td>
+    <td>0.3309</td>
+    <td>1.3236</td>
+  </tr>
+  <tr>
+    <td>古代5</td>
+    <td>0.3144</td>
+    <td>1.2576</td>
+  </tr>
+  <tr>
+    <td>古代4</td>
+    <td>0.2979</td>
+    <td>1.1916</td>
+  </tr>
+  <tr>
+    <td>古代3</td>
+    <td>0.2814</td>
+    <td>1.1256</td>
+  </tr>
+  <tr>
+    <td>古代2</td>
+    <td>0.2649</td>
+    <td>1.0596</td>
+  </tr>
+  <tr>
+    <td>古代1</td>
+    <td>0.2484</td>
+    <td>0.9936</td>
+  </tr>
+  <tr>
+    <td>地獄15</td>
+    <td>0.241125</td>
+    <td>0.9645</td>
+  </tr>
+  <tr>
+    <td colspan="3">*部分為推測數據</td>
+  </tr>
+</table>
 </body>
 </html>
